@@ -1,0 +1,122 @@
+/* 제목 섹션 스타일 */
+.form-title h1 {
+    text-align: center;
+    color: #8A2BE2; /* Electric Purple (포인트 컬러) */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    letter-spacing: 1.2px;
+}
+
+/* 회원가입 폼 스타일 */
+form {
+    width: 100%;
+}
+
+form table {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+th {
+    width: 150px;
+    background-color: #F0F4F9;
+    color: #333;
+    text-align: right;
+    padding-right: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+td {
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.inputs {
+    width: calc(100% - 20px);
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9fafb;
+    transition: border-color 0.3s ease;
+}
+
+.inputs:focus {
+    border-color: #00AEEF; /* Tranquil Blue */
+    outline: none;
+}
+
+/* 아이디 중복확인 버튼 스타일 */
+#checkIdBtn {
+    padding: 12px 20px;
+    background-color: #B18EFF; /* Digital Lavender */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: auto;
+    margin-top: 10px;
+}
+
+#checkIdBtn:hover {
+    background-color: #A76EDD; /* Light Purple */
+    transform: translateY(-2px);
+}
+
+.duplicated-checked {
+    background-color: #6C5CE7; /* Purple Basil */
+    color: white;
+    transform: translateY(-2px);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+/* 회원가입 버튼 스타일 */
+#signUpBtn {
+    width: 100%;
+    padding: 15px;
+    background-color: #5D3A4B; /* Purple Basil (배경 색상과 조화) */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#signUpBtn:hover {
+    background-color: #4B2D3C;
+    transform: translateY(-2px);
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+    form table {
+        width: 100%;
+    }
+
+    th {
+        width: 100px;
+        padding-right: 15px;
+        font-size: 14px;
+    }
+
+    td {
+        font-size: 14px;
+    }
+
+    #checkIdBtn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    #signUpBtn {
+        padding: 12px;
+        font-size: 16px;
+    }
+}

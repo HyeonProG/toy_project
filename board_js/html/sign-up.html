@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/signUp.css" />
+  </head>
+  <body>
+    <!-- 헤더 및 네비 영역 -->
+    <header>
+      <nav class="nav-container">
+        <div class="nav-item">
+          <span class="menu-link" id="board">게시판</span>
+        </div>
+        <div class="nav-item" id="authLinks">
+          <span class="menu-link" id="signIn">로그인</span>
+          <span class="menu-link" id="signUp">회원가입</span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- 메인 영역 -->
+    <main class="content-wrapper">
+      <!-- 회원가입 제목 -->
+      <section class="form-title">
+        <h1>회원가입</h1>
+      </section>
+
+      <!-- 회원가입 폼 영역 -->
+      <section>
+        <form action="" onsubmit="return false;">
+          <table>
+            <tr>
+              <th>아이디</th>
+              <td>
+                <input
+                  type="text"
+                  class="inputs"
+                  placeholder="아이디를 입력하세요."
+                  value="test"
+                  required
+                />
+                <button type="button" id="checkIdBtn" class="btn-small">
+                  중복확인
+                </button>
+              </td>
+            </tr>
+          <table>
+            <tr>
+              <th>닉네임</th>
+              <td>
+                <input
+                  type="text"
+                  class="inputs"
+                  placeholder="닉네임을 입력하세요."
+                  value="test"
+                  required
+                />
+              </td>
+            </tr>
+          <table>
+            <tr>
+              <th>비밀번호</th>
+              <td>
+                <input
+                  type="password"
+                  class="inputs"
+                  placeholder="비밀번호를 입력하세요."
+                  value="test"
+                  required
+                />
+              </td>
+            </tr>
+          <table>
+            <tr>
+              <th>비밀번호 확인</th>
+              <td>
+                <input
+                  type="password"
+                  class="inputs"
+                  placeholder="비밀번호를 입력하세요."
+                  value="test"
+                  required
+                />
+              </td>
+            </tr>
+          </table>
+          <div class="btn-area">
+            <button type="button" id="signUpBtn" class="btn">회원가입</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- 푸터 영역 -->
+    <footer class="footer-container">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#">이용 약관</a>
+          <a href="#">개인정보 처리방침</a>
+          <a href="#">고객 지원</a>
+        </div>
+        <div class="footer-copy">
+          <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- js 영역 -->
+    <script src="../js/header.js"></script>
+    <script src="../js/signUp.js"></script>
+  </body>
+</html>
